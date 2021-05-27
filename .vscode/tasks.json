@@ -1,0 +1,23 @@
+{
+  "compilerOptions":{
+      "module": "commonjs",
+      "target": "es5",
+      "noImplicitAny": false,
+      "sourceMap": true,
+      "outDir": "scripts/" //all transpile typescript is visible here
+  },
+  "exclude":[
+      "node_modules"
+],
+"tasks": [
+    {
+        "type": "typescript",
+        "tsconfig": "tsconfig.json",
+        "problemMatcher": [
+            "$tsc"
+        ],
+        "group": "build",
+        "label": "tsc: build - tsconfig.json"
+    }
+]
+}
